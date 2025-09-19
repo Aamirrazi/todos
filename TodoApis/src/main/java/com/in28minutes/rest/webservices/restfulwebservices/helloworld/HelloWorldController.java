@@ -10,6 +10,10 @@ public class HelloWorldController {
 	  public String basicAuthCheck() {
 	    return "Success"; 
 	  }
+	@GetMapping(path="/")
+	public String success() {
+		return "successfull";
+	}
 	@GetMapping(path = "/hello-world")
 	public String helloWorld() {
 		return "Hello World"; 
